@@ -10,7 +10,8 @@ namespace Controllers
         public static EventController Instance;
         [SerializeField] EventObject objectEvent;
         [SerializeField] private int percentageDrop = 10;
-        [SerializeField] private const int MaxPercent = 100;
+        
+        private const int MaxPercent = 100;
 
         [SerializeField] public List<Events> Eventses;
     
@@ -53,7 +54,7 @@ namespace Controllers
         {
             int percent = Random.Range(0, MaxPercent);
 
-            if (percent >= percentageDrop)
+            if (percent <= percentageDrop)
             {
                 Instantiate(objectEvent);
             }
@@ -65,7 +66,8 @@ namespace Controllers
 
             foreach (var _event in Eventses)
             {
-                if (_event.PercentMin >= percent && _event.PercentMax >= percent)
+                Debug.Log("Percent : " + percent);
+                if (percent >= _event.PercentMin && percent <=_event.PercentMax)
                 {
                     _event.EventGame.Play();
                 }

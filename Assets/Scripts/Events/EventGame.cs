@@ -1,7 +1,14 @@
 ﻿using System;
 using UnityEngine;
 
-public interface EventGame
+[Serializable]
+public class EventGame : MonoBehaviour
 {
-    void Play();
+    public delegate void OnEvent();
+    public event OnEvent onEvent;
+    
+    public void Play()
+    {
+        onEvent?.Invoke();
+    }
 }

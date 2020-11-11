@@ -39,6 +39,7 @@
           <e p="Events" t="Include">
             <e p="EventGame.cs" t="Include" />
             <e p="PlatformExtension.cs" t="Include" />
+            <e p="PlatformNarrowing.cs" t="Include" />
           </e>
           <e p="Menu" t="Include">
             <e p="SettingsMenu.cs" t="Include" />

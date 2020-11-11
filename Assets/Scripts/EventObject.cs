@@ -8,7 +8,6 @@ public class EventObject : MonoBehaviour
     {
         if (other.GetComponent<Platform>())
         {
-            Debug.Log("Prize!");
             EventController.Instance.EventGeneration();
         }
         else if (other.GetComponent<Border>())

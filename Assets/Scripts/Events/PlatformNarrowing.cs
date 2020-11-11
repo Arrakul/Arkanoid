@@ -1,7 +1,8 @@
-﻿using System;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class PlatformExtension : MonoBehaviour
+public class PlatformNarrowing : MonoBehaviour
 {
     private Platform Platform;
 
@@ -19,7 +20,7 @@ public class PlatformExtension : MonoBehaviour
     {
         Platform = GameController.Instance.platform;
         var scale = Platform.transform.localScale;
-        scale = new Vector3(2, scale.y, scale.z);
+        scale = new Vector3(0.5f, scale.y, scale.z);
         Platform.transform.localScale = scale;
     }
 }

@@ -38,7 +38,6 @@ public class GameController : MonoBehaviour
     
     void Start()
     {
-        platform = Instantiate(platformPrefab);
         CreateScene();
     }
 
@@ -54,6 +53,7 @@ public class GameController : MonoBehaviour
         money = 0;
         coinsText.text = "Score : 0";
         moneyText.text = "Money : 0";
+        platform = Instantiate(platformPrefab);
 
         BlockController.Instance.SpaunBlock();
         BallController.Instance.GetBall();
@@ -99,6 +99,7 @@ public class GameController : MonoBehaviour
     {
         BlockController.Instance.HideAllBlocks();
         BallController.Instance.HideAllBalls();
+        Destroy(platform.gameObject);
         
         SetPaused(false);
         HidePanels();
