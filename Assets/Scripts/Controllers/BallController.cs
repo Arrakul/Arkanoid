@@ -10,7 +10,7 @@ public class BallController : Singleton<BallController>
     private List<GameObject> balls;
     private int countActiveBalls;
     
-    public delegate void OnGame();
+    public delegate void OnGame(Transform target);
     public event OnGame onDamageBlock;
 
     private void Awake()
@@ -50,6 +50,21 @@ public class BallController : Singleton<BallController>
 
         return newBall;
     }
+    
+    public GameObject GetActiveBall()
+    {
+        countActiveBalls++;
+
+        foreach (var ball in balls)
+        {
+            if (ball.activeSelf)
+            {
+                return ball;
+            }
+        }
+
+        return null;
+    }
 
     public void HideAllBalls()
     {
@@ -71,9 +86,9 @@ public class BallController : Singleton<BallController>
         }
     }
 
-    public void DamageControll()
+    public void DamageControll(Transform target)
     {
         GameController.Instance.UpDateCoins();
-        onDamageBlock?.Invoke();
+        onDamageBlock?.Invoke(target);
     }
 }

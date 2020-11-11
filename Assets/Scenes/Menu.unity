@@ -735,7 +735,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &996568833
 RectTransform:
   m_ObjectHideFlags: 0
@@ -826,7 +826,7 @@ MonoBehaviour:
   timeAnimation: 0.7
   scaleAnimation: 1.2
   loopType: 1
-  ease: 27
+  ease: 1
 --- !u!4 &1002944713
 Transform:
   m_ObjectHideFlags: 0

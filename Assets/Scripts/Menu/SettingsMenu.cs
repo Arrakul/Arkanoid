@@ -42,8 +42,6 @@ public class SettingsMenu : MonoBehaviour
     {
         AnimationController.Instance.AnimationPulsation(nameGameText.rectTransform);
         AnimationController.Instance.AnimationPulsation(playButton.GetComponent<RectTransform>());
-        
-        LoadingImg.gameObject.SetActive(false);
 
         itemsCount = transform.childCount - 1;
         menuItems = new SettingsMenuItem[itemsCount];

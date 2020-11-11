@@ -72,9 +72,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRender: {fileID: 2363759676875129832}
-  fullXP: {fileID: 21300000, guid: 28cc4090f159dc14580de619ae3309ef, type: 3}
-  damageXP: {fileID: 21300000, guid: 56e20cc779780ee44ab64ef6d056c31a, type: 3}
-  XP: 2
+  fullXp: {fileID: 21300000, guid: 28cc4090f159dc14580de619ae3309ef, type: 3}
+  damageXp: {fileID: 21300000, guid: 56e20cc779780ee44ab64ef6d056c31a, type: 3}
+  primaryXp: 2
 --- !u!1 &5210360926312649444
 GameObject:
   m_ObjectHideFlags: 0

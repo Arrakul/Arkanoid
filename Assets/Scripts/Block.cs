@@ -3,11 +3,11 @@
 public class Block : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer spriteRender;
-    [SerializeField] private Sprite fullXP;
-    [SerializeField] private Sprite damageXP;
+    [SerializeField] private Sprite fullXp;
+    [SerializeField] private Sprite damageXp;
 
-    [SerializeField]private int primaryXP = 2;
-    private int XP;
+    [SerializeField]private int primaryXp = 2;
+    private int Xp;
     
     void Start()
     {
@@ -16,16 +16,16 @@ public class Block : MonoBehaviour
 
     public void ResetSettings()
     {
-        XP = primaryXP;
-        spriteRender.sprite = fullXP;
+        Xp = primaryXp;
+        spriteRender.sprite = fullXp;
     }
 
     public void RegistredDamage(int damage)
     {
-        XP -= damage;
-        spriteRender.sprite = damageXP;
+        Xp -= damage;
+        spriteRender.sprite = damageXp;
 
-        if(XP <= 0)
+        if(Xp <= 0)
         {
             gameObject.SetActive(false);
             //Destroy(gameObject);

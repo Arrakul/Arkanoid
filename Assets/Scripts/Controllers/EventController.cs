@@ -50,13 +50,14 @@ namespace Controllers
             BallController.Instance.onDamageBlock -= CreateEventObject;
         }
 
-        private void CreateEventObject()
+        private void CreateEventObject(Transform target)
         {
             int percent = Random.Range(0, MaxPercent);
 
             if (percent <= percentageDrop)
             {
-                Instantiate(objectEvent);
+                var obj = Instantiate(objectEvent);
+                obj.transform.position = target.position;
             }
         }
 
@@ -66,7 +67,7 @@ namespace Controllers
 
             foreach (var _event in Eventses)
             {
-                Debug.Log("Percent : " + percent);
+                //Debug.Log("Percent : " + percent);
                 if (percent >= _event.PercentMin && percent <=_event.PercentMax)
                 {
                     _event.EventGame.Play();

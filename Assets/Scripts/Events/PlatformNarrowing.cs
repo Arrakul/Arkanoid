@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlatformNarrowing : MonoBehaviour
 {
-    private Platform Platform;
+    private Platform _platform;
 
     private void Start()
     {
@@ -18,9 +18,18 @@ public class PlatformNarrowing : MonoBehaviour
 
     public void Play()
     {
-        Platform = GameController.Instance.platform;
-        var scale = Platform.transform.localScale;
-        scale = new Vector3(0.5f, scale.y, scale.z);
-        Platform.transform.localScale = scale;
+        Debug.Log("PlatformNarrowing");
+        _platform = GameController.Instance.platform;
+        var scale = _platform.transform.localScale;
+        
+        if(scale.x.Equals(1))
+        {
+            scale = new Vector3(0.5f, scale.y, scale.z);
+        }
+        else
+        {
+            scale = new Vector3(1, scale.y, scale.z);
+        }
+        _platform.transform.localScale = scale;
     }
 }

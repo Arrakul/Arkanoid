@@ -17,9 +17,18 @@ public class PlatformExtension : MonoBehaviour
 
     public void Play()
     {
+        Debug.Log("PlatformExtension");
         Platform = GameController.Instance.platform;
         var scale = Platform.transform.localScale;
-        scale = new Vector3(2, scale.y, scale.z);
+
+        if(scale.x.Equals(1))
+        {
+            scale = new Vector3(2, scale.y, scale.z);
+        }
+        else
+        {
+            scale = new Vector3(1, scale.y, scale.z);
+        }
         Platform.transform.localScale = scale;
     }
 }
