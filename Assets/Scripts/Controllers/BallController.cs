@@ -8,7 +8,7 @@ public class BallController : Singleton<BallController>
     [SerializeField] private int numberBall = 10;
     [SerializeField] private GameObject ballPrefab;
     private List<GameObject> balls;
-    private int countActiveBalls;
+    public int countActiveBalls;
     
     public delegate void OnGame(Transform target);
     public event OnGame onDamageBlock;
@@ -53,7 +53,7 @@ public class BallController : Singleton<BallController>
     
     public GameObject GetActiveBall()
     {
-        countActiveBalls++;
+        //countActiveBalls++;
 
         foreach (var ball in balls)
         {

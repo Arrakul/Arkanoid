@@ -23,6 +23,13 @@
               <e p="readme.txt" t="Include" />
             </e>
           </e>
+          <e p="SimpleJSON.cs" t="Include" />
+        </e>
+        <e p="Resources" t="Include">
+          <e p="Levels" t="Include">
+            <e p="Level_1.txt" t="Include" />
+            <e p="Level_2.txt" t="Include" />
+          </e>
         </e>
         <e p="Scripts" t="Include">
           <e p="Ball.cs" t="Include" />
@@ -47,6 +54,7 @@
             <e p="SettingsMenu.cs" t="Include" />
             <e p="SettingsMenuItem.cs" t="Include" />
           </e>
+          <e p="Parcer.cs" t="Include" />
           <e p="Platform.cs" t="Include" />
           <e p="Pool" t="Include">
             <e p="PoolManager.cs" t="Include" />

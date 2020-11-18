@@ -2,27 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b72d1a8-c037-45af-a7de-2d88408f16fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Events/AccelerationBall.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Events/AccelerationBall.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Events/SlowingDownBall.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Events/SlowingDownBall.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleJSON.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleJSON.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Block.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Block.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Levels.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Levels/Level_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Levels/Level_1.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Levels/Level_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Levels/Level_2.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Parcer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Parcer.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Arkanoid/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Arkanoid/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Arkanoid/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Arkanoid/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Arkanoid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Arkanoid/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BlueBlock.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/BlueBlock.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GreenBlock.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GreenBlock.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/OrangeBlock.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/OrangeBlock.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PinkBlock.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PinkBlock.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/RedBlock.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/RedBlock.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/YellowBlock.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/YellowBlock.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ball.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ball.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Block.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Block.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/BallController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/BallController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/EventController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/EventController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Events/PlatformExtension.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Events/PlatformExtension.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Events/PlatformNarrowing.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Events/PlatformNarrowing.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/SettingsMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/SettingsMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/BlockController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/BlockController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/GameController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +34,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/BallController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ball.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/SimpleJSON.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Menu/SettingsMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Events/EventGame.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/BlockController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -52,6 +52,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Block.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EventObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/AnimationController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Parcer.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -65,17 +66,19 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/AnimationController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EventObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Events/EventGame.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/EventController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Block.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ball.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/BallController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Events/AccelerationBall.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Events/PlatformNarrowing.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Events/PlatformExtension.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Events/SlowingDownBall.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/BlockController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Menu/SettingsMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/SimpleJSON.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/BallController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Block.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Parcer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/BlockController.cs" />
       </list>
     </option>
   </component>
@@ -92,6 +95,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TWShift.3" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="C#" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -124,7 +128,9 @@
       <option name="presentableId" value="Default" />
       <updated>1604993971725</updated>
       <workItem from="1604994022480" duration="27915000" />
-      <workItem from="1605069265783" duration="22832000" />
+      <workItem from="1605069265783" duration="23235000" />
+      <workItem from="1605674317605" duration="1377000" />
+      <workItem from="1605676264346" duration="20171000" />
     </task>
     <servers />
   </component>
@@ -134,6 +140,10 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="WindowStateProjectService">
+    <state x="324" y="164" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1605675421501">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="324" y="164" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.30.1366.738@0.30.1366.738" timestamp="1605675421501" />
     <state x="414" y="121" key="RiderGenerateDialog" timestamp="1605087920389">
       <screen x="0" y="30" width="1366" height="738" />
     </state>

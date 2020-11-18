@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using Arkanoid.Utils;
 using UnityEngine;
@@ -8,13 +7,18 @@ using Random = UnityEngine.Random;
 public class BlockController : Singleton<BlockController>
 {
     public int numberBlocks;
-    public float xMin, xMax, yMin, yMax;
-    public int minDrop, maxDrop;
-    public float timePause;
-        
-    public Transform blockStorage;
-    public GameObject[] blocks;
-    private List<GameObject>[] _poolBlocks;
+    [HideInInspector ]public int countActiveBlocks;
+
+    public GameObject blocks;
+    public SpriteBlock[] spriteBlocks;
+    private List<GameObject> _poolBlocks;
+
+    [Serializable]
+    public struct SpriteBlock
+    {
+        public Sprite fullXpSprite;
+        public Sprite damageXpSprite;
+    }
 
     private void Awake()
     {
@@ -23,51 +27,53 @@ public class BlockController : Singleton<BlockController>
 
     private void CreateBlocks()
     {
-        _poolBlocks = new List<GameObject>[blocks.Length];
-        
-        for (int i = 0; i < blocks.Length; i++)
-        {
-            var blockStorageItem = new GameObject {name = blocks[i].name + "Storage"};
-            blockStorageItem.transform.SetParent(blockStorage);
-
-            _poolBlocks[i] = PoolManager.Instance.GetObjects(blocks[i], numberBlocks, blockStorageItem.transform);
-        }
+        _poolBlocks = new List<GameObject>();
+        _poolBlocks = PoolManager.Instance.GetObjects(blocks, numberBlocks, gameObject.transform);
     }
 
-    public void SpaunBlock()
+    public Sprite[] GetSprite(int index)
     {
-        int quantityPerPass = Random.Range(minDrop, maxDrop);
+        Sprite[] sprites = new Sprite[2];
 
-        for (int i = 0; i < quantityPerPass; i++)
+        sprites[0] = spriteBlocks[index].fullXpSprite;
+        sprites[1] = spriteBlocks[index].damageXpSprite;
+
+        return sprites;
+    }
+    
+    public Block GetBlock()
+    {
+        foreach (var obj in _poolBlocks)
         {
-            int indexBlock = Random.Range(0, blocks.Length);
-
-            foreach (var block in _poolBlocks[indexBlock])
+            if (!obj.activeSelf)
             {
-                if (!block.activeSelf)
-                {
-                    block.transform.position = new Vector3(Random.Range(xMin, xMax), Random.Range(yMin, yMax), 0);
-                    block.GetComponent<Block>().ResetSettings();
-                    block.SetActive(true);
+                var block = obj.GetComponent<Block>();
+                block.boxCollider2D = block.GetComponent<BoxCollider2D>();
                     
-                    AnimationController.Instance.AnimationPulsation(block.transform);
-                    break;
-                }
+                obj.SetActive(true);
+                return block;
             }
         }
+
+        return null;
     }
 
     public void HideAllBlocks()
     {
-        for (int i = 0; i < blocks.Length; i++)
+        foreach (var block in _poolBlocks)
         {
-            foreach (var block in _poolBlocks[i])
-            {
-                if (block.activeSelf)
-                {
-                    block.SetActive(false);
-                }
-            }
+            block.transform.SetParent(gameObject.transform);
+            block.SetActive(false);
+        }
+    }
+    
+    public void CheckWin()
+    {
+        --countActiveBlocks;
+
+        if (countActiveBlocks <= 0)
+        {
+            GameController.Instance.WinGame();
         }
     }
 }
