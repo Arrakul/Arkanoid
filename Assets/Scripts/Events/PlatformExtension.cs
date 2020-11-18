@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class PlatformExtension : MonoBehaviour
 {
-    private Platform Platform;
+    private Platform _platform;
 
     private void Start()
     {
@@ -18,17 +18,21 @@ public class PlatformExtension : MonoBehaviour
     public void Play()
     {
         Debug.Log("PlatformExtension");
-        Platform = GameController.Instance.platform;
-        var scale = Platform.transform.localScale;
+        _platform = GameController.Instance.platform;
+        var scale = _platform.transform.localScale;
 
         if(scale.x.Equals(1))
         {
             scale = new Vector3(2, scale.y, scale.z);
+            _platform.leftBorder += 1f;
+            _platform.rightBorder -= 1f;
         }
         else
         {
             scale = new Vector3(1, scale.y, scale.z);
+            _platform.leftBorder = -1.7f;
+            _platform.rightBorder = 1.7f;
         }
-        Platform.transform.localScale = scale;
+        _platform.transform.localScale = scale;
     }
 }

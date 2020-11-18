@@ -3,8 +3,8 @@
 public class Platform : MonoBehaviour
 {
     [SerializeField] [Range(10, 50)] private float speed = 15f;
-    [SerializeField] private float leftBorder;
-    [SerializeField] private float rightBorder;
+    [SerializeField] public float leftBorder;
+    [SerializeField] public float rightBorder;
 
     void Update()
     {

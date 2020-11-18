@@ -15,13 +15,12 @@ public class AnimationController : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
             Destroy(this);
         }
-        
-        DontDestroyOnLoad(gameObject);
     }
 
     public void ResetAnimation(RectTransform rectTransform)
