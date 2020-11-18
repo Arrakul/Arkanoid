@@ -19,10 +19,12 @@ public class Ball : MonoBehaviour
             Random.Range(minSpeed, maxSpeed));
     }
     
-    public void Move(int minspeed, int maxspeed)
+    public void Move(bool isSlowly, float kof)
     {
-        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(Random.Range(minspeed, maxspeed), 
-            Random.Range(minspeed, maxspeed));
+        var velocity = gameObject.GetComponent<Rigidbody2D>().velocity;
+        
+        if(isSlowly) gameObject.GetComponent<Rigidbody2D>().velocity = velocity / kof;
+        else gameObject.GetComponent<Rigidbody2D>().velocity = velocity * kof;
     }
     
     private void OnCollisionEnter2D(Collision2D other)

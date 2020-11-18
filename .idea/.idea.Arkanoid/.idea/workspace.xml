@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="1b72d1a8-c037-45af-a7de-2d88408f16fd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Arkanoid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Arkanoid/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/AnimationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/AnimationController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Events/PlatformExtension.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Events/PlatformExtension.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Events/PlatformNarrowing.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Events/PlatformNarrowing.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Platform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Platform.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils/Singleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/Singleton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ball.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ball.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Events/AccelerationBall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Events/AccelerationBall.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Events/SlowingDownBall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Events/SlowingDownBall.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,9 +48,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/EventObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Events/EventGame.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/EventController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Ball.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Events/AccelerationBall.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Events/SlowingDownBall.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Menu/SettingsMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/SimpleJSON.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/BallController.cs" />
@@ -65,6 +60,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Platform.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Events/PlatformNarrowing.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Events/PlatformExtension.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ball.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Events/AccelerationBall.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Events/SlowingDownBall.cs" />
       </list>
     </option>
   </component>
@@ -116,7 +114,7 @@
       <workItem from="1604994022480" duration="27915000" />
       <workItem from="1605069265783" duration="23235000" />
       <workItem from="1605674317605" duration="1377000" />
-      <workItem from="1605676264346" duration="24815000" />
+      <workItem from="1605676264346" duration="25470000" />
     </task>
     <servers />
   </component>

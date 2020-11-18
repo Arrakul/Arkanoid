@@ -5,8 +5,7 @@ public class AccelerationBall : MonoBehaviour
 {
     private Ball _ball;
     
-    public int maxSpeed = 8;
-    public int minSpeed = 5;
+    public float cofficient = 1.5f;
     public int accelerationTime = 5;
     private void Start()
     {
@@ -28,7 +27,7 @@ public class AccelerationBall : MonoBehaviour
     IEnumerator AccelerationMove()
     {
         float timer = 0f;
-        _ball.Move(minSpeed, maxSpeed);
+        _ball.Move(false, cofficient);
         
         while (timer < accelerationTime) 
         {

@@ -163,8 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e802ad159a7a43488cb149cefd05de3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 2
-  minSpeed: 1
+  cofficient: 2
   accelerationTime: 5
 --- !u!4 &93942910
 Transform:
@@ -906,8 +905,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91dcb591beded96478e1cf58a97371f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 6
-  minSpeed: 4
+  cofficient: 1.5
   accelerationTime: 5
 --- !u!114 &565504523
 MonoBehaviour:
@@ -1992,7 +1990,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectEvent: {fileID: 4825918181354375464, guid: 3888451dab909724e94ae098551ab540,
     type: 3}
-  percentageDrop: 10
+  percentageDrop: 90
   Eventses:
   - PercentMin: 0
     PercentMax: 20

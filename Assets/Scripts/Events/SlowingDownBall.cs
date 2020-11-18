@@ -6,8 +6,7 @@ public class SlowingDownBall : MonoBehaviour
 {
     private Ball _ball;
     
-    public int maxSpeed = 2;
-    public int minSpeed = 1;
+    public float cofficient = 2f;
     public int accelerationTime = 5;
     private void Start()
     {
@@ -29,7 +28,7 @@ public class SlowingDownBall : MonoBehaviour
     IEnumerator AccelerationMove()
     {
         float timer = 0f;
-        _ball.Move(minSpeed, maxSpeed);
+        _ball.Move(true, cofficient);
         
         while (timer < accelerationTime) 
         {
