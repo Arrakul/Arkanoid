@@ -1990,7 +1990,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectEvent: {fileID: 4825918181354375464, guid: 3888451dab909724e94ae098551ab540,
     type: 3}
-  percentageDrop: 90
+  percentageDrop: 10
   Eventses:
   - PercentMin: 0
     PercentMax: 20

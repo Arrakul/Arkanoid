@@ -49,6 +49,7 @@ public class BlockController : Singleton<BlockController>
             {
                 var block = obj.GetComponent<Block>();
                 block.boxCollider2D = block.GetComponent<BoxCollider2D>();
+                AnimationController.Instance.AnimationPulsation(block.transform);
                     
                 obj.SetActive(true);
                 return block;

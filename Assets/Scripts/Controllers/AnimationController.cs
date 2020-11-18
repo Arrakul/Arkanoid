@@ -1,10 +1,10 @@
-﻿using UnityEngine;
+﻿using Arkanoid.Utils;
+using UnityEngine;
 using DG.Tweening;
 
-public class AnimationController : MonoBehaviour
+public class AnimationController : Singleton<AnimationController>
 {
-    public static AnimationController Instance;
-    
+
     [SerializeField] float timeAnimation = 0f;
     [SerializeField] float scaleAnimation = 0f;
     [SerializeField] LoopType loopType;
@@ -12,15 +12,7 @@ public class AnimationController : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(this);
-        }
+        DontDestroyOnLoad(gameObject);
     }
 
     public void ResetAnimation(RectTransform rectTransform)
