@@ -34,13 +34,6 @@ public class Parcer
 		return _instance ?? (_instance = new Parcer());
 	}
 
-	/*ModelJson _modelJson = null;
-	public ModelJson modelJson
-	{
-		get => _modelJson ?? (_modelJson = LoadModels(GameController.Instance.numberLevel));
-		set => _modelJson = value;
-	}*/
-
 	public const int CountLevels = 5;
 
 	public ModelJson LoadModels(int level)
@@ -52,8 +45,9 @@ public class Parcer
 		
 		var path = "Levels/Level_" + level;
 		var asset = Resources.Load<TextAsset>(path);
-		if(asset == null)
-			return null;
+		
+		if(asset == null) return null;
+		
 		var json = asset.text;
 		var newJson = JSON.Parse(json);
 		var model = new ModelJson
@@ -63,7 +57,7 @@ public class Parcer
 		};
 
 		model.blocks = new BlockObject[newJson["board"].Count];
-		for(var i=0; i<newJson["board"].Count; i++) 
+		for(var i = 0; i < newJson["board"].Count; i++) 
 		{
 			model.blocks[i] = JsonUtility.FromJson<BlockObject>(newJson["board"][i].ToString());
 		}

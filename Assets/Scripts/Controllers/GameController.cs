@@ -9,10 +9,12 @@ public class GameController : MonoBehaviour
 {
     public static GameController Instance;
 
+    [SerializeField] private int multipleForMoney = 100;
+    [SerializeField] private int multipleForBoll = 1000;
+
     public Platform platformPrefab;
     public Transform gridObjects;
     public Transform borders;
-    public Sprite sprite;
 
     [HideInInspector]public Platform platform;
     private Ball _ball;
@@ -28,7 +30,7 @@ public class GameController : MonoBehaviour
     
     float offsetObjects = -0.775f;
     const int pointsPerHit = 10;
-    const float sizeRow = 150f;
+    const float sizeRow = 170f;
     const float pixelPerUnit = 100f;
     const float posBlocks = 1f;
 
@@ -72,7 +74,6 @@ public class GameController : MonoBehaviour
         CreateBlocks();
     }
     
-    int countLR = 1;
     private void CreateBlocks()
     {
         var modelLevel = Parcer.Instance().LoadModels(numberLevel);
@@ -110,7 +111,7 @@ public class GameController : MonoBehaviour
             BlockController.Instance.countActiveBlocks++;
         }
 
-        float width = (modelLevel.size.x + countLR*2)*(sizeRow + offsetObjects*pixelPerUnit);
+        float width = (modelLevel.size.x + 2)*(sizeRow + offsetObjects*pixelPerUnit);
         float height = (modelLevel.size.y)*(sizeRow + offsetObjects*pixelPerUnit);
 
         float screenHeight = Camera.main.orthographicSize * 2 * pixelPerUnit;
@@ -141,12 +142,12 @@ public class GameController : MonoBehaviour
     {
         score += pointsPerHit;
 
-        if ((score % 100) == 0)
+        if ((score % multipleForMoney) == 0)
         {
             money += 1;
         }
         
-        if ((score % 1000) == 0)
+        if ((score % multipleForBoll) == 0)
         {
             BallController.Instance.GetBall();
         }
