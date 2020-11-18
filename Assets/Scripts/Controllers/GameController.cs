@@ -30,7 +30,7 @@ public class GameController : MonoBehaviour
     const int pointsPerHit = 10;
     const float sizeRow = 150f;
     const float pixelPerUnit = 100f;
-    const float posBlocks = 2.4f;
+    const float posBlocks = 1f;
 
     private Block[,] _blocks; 
 
@@ -105,7 +105,7 @@ public class GameController : MonoBehaviour
             obj.type = (Block.EBlockType) Enum.Parse(typeof (Block.EBlockType), block.type, true);
             obj.boxCollider2D.isTrigger = false;
             obj.spriteRender = obj.GetComponent<SpriteRenderer>();
-            obj.ResetSettings();
+            obj.InstallSettings();
 
             BlockController.Instance.countActiveBlocks++;
         }

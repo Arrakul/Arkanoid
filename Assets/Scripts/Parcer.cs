@@ -41,7 +41,7 @@ public class Parcer
 		set => _modelJson = value;
 	}*/
 
-	public const int CountLevels = 10;
+	public const int CountLevels = 5;
 
 	public ModelJson LoadModels(int level)
 	{

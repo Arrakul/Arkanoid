@@ -2,26 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b72d1a8-c037-45af-a7de-2d88408f16fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleJSON.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleJSON.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Block.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Block.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Levels.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Levels/Level_1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Levels/Level_1.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Levels/Level_2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Levels/Level_2.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Parcer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Parcer.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Arkanoid/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Arkanoid/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Arkanoid/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Arkanoid/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Arkanoid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Arkanoid/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Block.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Block.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/BallController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/BallController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/BlockController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/BlockController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/GameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Parcer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parcer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,8 +62,8 @@
         <option value="$PROJECT_DIR$/Assets/Plugins/SimpleJSON.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/BallController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Block.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Parcer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/BlockController.cs" />
       </list>
     </option>
@@ -130,7 +116,7 @@
       <workItem from="1604994022480" duration="27915000" />
       <workItem from="1605069265783" duration="23235000" />
       <workItem from="1605674317605" duration="1377000" />
-      <workItem from="1605676264346" duration="20171000" />
+      <workItem from="1605676264346" duration="23223000" />
     </task>
     <servers />
   </component>
@@ -152,5 +138,9 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="339" y="174" key="run.anything.popup/0.30.1366.738@0.30.1366.738" timestamp="1605075867853" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1605700313727">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.30.1366.738@0.30.1366.738" timestamp="1605700313727" />
   </component>
 </project>

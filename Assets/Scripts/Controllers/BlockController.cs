@@ -63,6 +63,7 @@ public class BlockController : Singleton<BlockController>
         foreach (var block in _poolBlocks)
         {
             block.transform.SetParent(gameObject.transform);
+            //block.GetComponent<Block>().ResetSettings();
             block.SetActive(false);
         }
     }

@@ -1,0 +1,11 @@
+{
+"board": [
+	{"y": 2, "x": 0, "type": "Green"}, 
+	{"y": 2, "x": 1, "type": "Green"}, 
+	{"y": 2, "x": 2, "type": "Green"}, 
+	{"y": 1, "x": 1, "type": "Green"}, 
+	{"y": 0, "x": 1, "type": "Green"}
+	], 
+"level_info": {"level_id": 3}, 
+"size": {"x": 3, "y": 3}
+}

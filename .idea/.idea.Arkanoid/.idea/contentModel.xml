@@ -29,6 +29,9 @@
           <e p="Levels" t="Include">
             <e p="Level_1.txt" t="Include" />
             <e p="Level_2.txt" t="Include" />
+            <e p="Level_3.txt" t="Include" />
+            <e p="Level_4.txt" t="Include" />
+            <e p="Level_5.txt" t="Include" />
           </e>
         </e>
         <e p="Scripts" t="Include">

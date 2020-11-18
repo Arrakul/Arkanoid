@@ -30,7 +30,7 @@ public class Block : MonoBehaviour
         //ResetSettings();
     }
 
-    public void ResetSettings()
+    public void InstallSettings()
     {
         int index = 0;
         switch (type)
@@ -66,6 +66,7 @@ public class Block : MonoBehaviour
         if(Xp <= 0)
         {
             gameObject.SetActive(false);
+            spriteRender.sprite = null;
             BlockController.Instance.CheckWin();;
             //Destroy(gameObject);
         }
